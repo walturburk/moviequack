@@ -1,0 +1,51 @@
+<script>
+jQuery(document).ready(function() {
+	jQuery("input#searchfield").focus();
+});
+</script>
+<div class="centercontent">
+  <div class="padding floatright white smalltext">
+
+
+  {toplogin}
+
+
+  </div>
+ </div>
+
+<div style="{mscstyle}" class="backgroundimage {mscclass}">
+  <div class="mainsearchcontent window">
+
+<div id="searchmovie" class="content">
+  <h1 class="marginbottom">movie<span class="red">quack</span></h1><br>
+  <form id="searchmovieform" method="get" action="searchpage.php">
+    <div class="searchholder">
+      <input id="searchfield" placeholder="search for a movie" class="typeahead searchfield" type='name' name='q'/>
+    </div>
+
+	<div class="searchbuttonhold">
+	<div class="mainlogo">
+	  <img src="/img/moviequack.png">
+	</div>
+
+    <div class="searchbubble">
+      <input value="search!" class="searchbutton" type="submit"/>
+    </div>
+	</div>
+  </form>
+</div>
+</div>
+</div>
+
+
+<div id="randommoviesug">
+{randommovie}
+</div>
+<div class="clear"></div>
+
+
+<div class="contentholder">
+<div class="content narrow centeralign">
+{printedfeed}
+</div>
+</div>
